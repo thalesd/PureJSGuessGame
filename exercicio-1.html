@@ -7,19 +7,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exercício 1</title>
 
-        <script src="./js/randomNumberGuess.js"></script>
+        <script type="text/javascript" src="./js/randomNumberGame.js"></script>
         <link rel="stylesheet" href="./css/index.css"/>
     </head>
 
     <body>
         <h1>Qual numero foi sorteado?</h1>
+
         <hr class="horizontalLine">
+
+        <div>Tentativas: <span id="numberOfTries">0</span></div>
+
         <div>
             <label for="randomNumberGuess" class="d-inline">Eu acho que o numero sorteado foi:</label>
-            <input id="randomNumberGuess" class="d-inline" type="number" min="0" max="100" />
+            <input id="randomNumberGuess" class="d-inline" type="number" min="0" max="100" onkeyup="checkNumberIsInRange(this)"/>
             <input type="button" class="d-inline" value="Jogar" onclick="checkGuess()"/>
         </div>
 
+        <div id="usedNumbersDisplay"></div>
     </body>
 </html>
 
