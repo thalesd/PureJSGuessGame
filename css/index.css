@@ -1,0 +1,8 @@
+.d-inline {
+    display: inline;
+}
+
+.horizontalLine {
+    padding: 0, 1;
+    background-color: azure;
+}
