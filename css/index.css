@@ -3,6 +3,28 @@
 }
 
 .horizontalLine {
-    padding: 0, 1;
-    background-color: azure;
+    padding: 1px;
+    height: 0.1rem;
+    border: none;
+    background-color: sienna;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
 }
