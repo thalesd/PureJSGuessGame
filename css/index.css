@@ -32,3 +32,29 @@
 .align-items-center {
     align-items: center;
 }
+
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.td__vencedor {
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(0, 128, 0, 0.5);
+    font-size: large;
+    padding: 2rem;
+    border-radius: 20%;
+    margin: 3rem;
+}

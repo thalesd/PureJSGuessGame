@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 2</title>
 
-    <script type="text/javascript" src="./js/randomNumberGame.js"></script>
+    <script type="text/javascript" src="./js/diceRollCompetition.js"></script>
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 
@@ -17,13 +17,19 @@
     <hr class="horizontalLine" />
 
     <div class="d-flex justify-content-center align-itens-center">
-        <div id="resultados-1" class=""></div>
+        <div id="resultados-1" class="pr-2"></div>
         <input id="botaoAmigo-1" type="button" value="Rolar Para Amigo 1" onclick="rolarDadosAmigo(1)" />
     </div>
 
     <div class="d-flex justify-content-center align-itens-center">
-        <div id="resultados-2" class=""></div>
+        <div id="resultados-2" class="pr-2"></div>
         <input id="botaoAmigo-2" type="button" value="Rolar Para Amigo 2" onclick="rolarDadosAmigo(2)" />
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div id="vencedor" class="td__vencedor" style="display: none;">
+
+        </div>
     </div>
 
     <div class="text-center">
