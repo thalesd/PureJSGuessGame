@@ -17,6 +17,8 @@ function rolarDadosAmigo(numeroAmigo) {
         }
     }
 
+    document.getElementById('resultados-' + numeroAmigo).innerText = prepararTextoResultado(numeroAmigo);
+
     if (amigo1Rolou && amigo2Rolou) {
         checarVencedor();
     }
@@ -45,5 +47,14 @@ function checarVencedor() {
         alert("Amigo 2 é o vencedor!")
     } else {
         alert("Incrivelmente, um empate...")
+    }
+}
+
+function prepararTextoResultado(numeroAmigo) {
+    var stringResultados = "";
+    if (numeroAmigo == 1) {
+        stringResultados = numerosAmigo1.join(', ') + ' = ' + numerosAmigo1.reduce((n, v) => v + n).toString();
+    } else {
+        stringResultados = numerosAmigo2.join(', ') + ' = ' + numerosAmigo2.reduce((n, v) => v + n).toString();
     }
 }
