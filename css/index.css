@@ -55,6 +55,6 @@
     background-color: rgba(0, 128, 0, 0.5);
     font-size: large;
     padding: 2rem;
-    border-radius: 20%;
+    border-radius: .5rem;
     margin: 3rem;
 }

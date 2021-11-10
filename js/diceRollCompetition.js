@@ -5,7 +5,7 @@ var numerosAmigo1 = [];
 var numerosAmigo2 = [];
 
 function rolarDadosAmigo(numeroAmigo) {
-    document.getElementById('botaoAmigo-' + numeroAmigo).setAttribute('enabled', false);
+    document.getElementById('botaoAmigo-' + numeroAmigo).setAttribute('disabled', '');
 
     if (numeroAmigo == 1) {
         amigo1Rolou = true;
@@ -35,11 +35,13 @@ function resetarJogo() {
     amigo2Rolou = false;
     numerosAmigo2 = [];
 
-    document.getElementById('botaoAmigo-1').setAttribute('enabled', true);
+    document.getElementById('botaoAmigo-1').removeAttribute('disabled');
     document.getElementById('resultados-1').innerText = "";
 
-    document.getElementById('botaoAmigo-2').setAttribute('enabled', true);
+    document.getElementById('botaoAmigo-2').removeAttribute('disabled');
     document.getElementById('resultados-2').innerText = "";
+
+    document.getElementById('vencedor').style = "display: none";
 }
 
 function rolarDado() {
